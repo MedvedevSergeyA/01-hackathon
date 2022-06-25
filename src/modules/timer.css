@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley&display=swap');
+
+::placeholder {
+    font-family: 'Georgia', cursive;
+}
+
+.prompt {
+    position: fixed;
+    right: 20px;
+    top: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #48036F;
+    height: 60px;
+    padding: 16px;
+    border-radius: 20px;
+    transition: opacity 0.5s ease-in-out;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 1),
+    -23px 0 20px -23px rgba(0, 0, 0, .8),
+    23px 0 20px -23px rgba(0, 0, 0, .8),
+    0 0 40px rgba(0, 0, 0, .1) inset;
+    z-index: 100;
+}
+
+
+.input-wrapper, .input {
+    height: 40px;
+    outline: none;
+    font-family: 'Besley', serif;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.input-wrapper {
+    width: 100px;
+    margin-right: 8px;
+}
+
+.input {
+    width: 100%;
+    text-align: right;
+}
+
+.button {
+    border-radius: 8px;
+    height: 40px;
+    width: 40px;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    background-color: #AD66D5;
+    color: #48036F;
+    transition: background-color 200ms ease-in;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #b423f1;
+}
+
+.confirm:active {
+    box-shadow: 0 0 0 5px #00B945;
+    color: #00b945;
+}
+
+.decline:active {
+    box-shadow: 0 0 0 5px #ED002F;
+    color: #ED002F;
+}
+
+.confirm {
+    content: "\2713";
+    margin-right: 8px;
+}
+
+.confirm:disabled {
+    background-color: #8A61A0;
+    color: #3E1653;
+    cursor: default;
+}
+
+.decline {
+    content: "\274C";
+}
+
+.timer {
+    font-family: 'Besley', serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #FFB600;
+}
