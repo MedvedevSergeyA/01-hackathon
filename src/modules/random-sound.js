@@ -2,9 +2,6 @@ import { Module } from '../core/module.js'
 import { random } from '../utils.js'
 
 export class SoundModule extends Module {
-    constructor(type, text) {
-        super(type, text)
-    };
 
     trigger() {
         const sounds = [
