@@ -1,0 +1,40 @@
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.button {
+    background-color: indigo;
+    position: relative;
+    font-size: 15px;
+    width: 200px;
+    height: 75px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 2rem;
+    border-radius: 10px;
+    background-size: cover;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    font-weight: bold;
+}
+.button:active {
+    top: 6px;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+    height: 32px;
+}
+.counter {
+    text-align: center;
+}
+
