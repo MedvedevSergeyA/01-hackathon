@@ -26,7 +26,7 @@ export class ClicksModule extends Module {
         counter.classList.add('counter')
 
         main.append(display, button, counter)
-        body.append(main)
+        body.prepend(main)
 
 
         button.onclick = start
