@@ -37,33 +37,40 @@ export class ClicksModule extends Module {
             display.textContent = formatTime(TIME)
             button.onclick = () => {
                 const audio = new Audio('https://zvukipro.com/uploads/files/2018-10/1540316483_mechanic-button-pressing_fj_hbhno.mp3')
-
-                body.style.backgroundColor = '#E0FFFF'
-                body.style.transition = '0.4s'
                 button.textContent = 'Нажимай быстрее'
 
 
-                counter.textContent = `Колличество нажатий: ${clicks++}`
+                counter.textContent = `Колличество нажатий: ${++clicks}`
 
                 audio.play()
             }
 
             const interval = setInterval(() => {
                 const delta = Date.now() - startTime
-                display.textContent = `Времени оcталось: ${TIME - delta}`
-            }, 100)
+                display.textContent = `Времени оcталось: ${formatTime(TIME - delta)}`
+            }, 10)
 
-            const timeOut = setTimeout(() => {
+            setTimeout(() => {
                 button.onclick = null
                 counter.remove()
 
-                display.textContent = `Игра окнчена, сделано кликов: ${clicks}`
+                display.textContent = `Игра окончена, сделано кликов: ${clicks}`
 
                 clearInterval(interval)
-                clearTimeout(timeOut)
             }, TIME)
+
+            setTimeout(function () {
+                main.remove()
+                body.style.backgroundColor = '#fff'
+            }, 15000)
         }
     }
 }
+
+
+
+
+
+
 
 

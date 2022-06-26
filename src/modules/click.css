@@ -11,7 +11,7 @@
 .button {
     background-color: indigo;
     position: relative;
-    font-size: .75rem;
+    font-size: 15px;
     width: 200px;
     height: 75px;
     max-width: 100%;
@@ -37,3 +37,4 @@
 .counter {
     text-align: center;
 }
+

@@ -4,6 +4,5 @@ export function random(min, max) {
 
 
 export function formatTime(ms) {
-  const sec = Number.parseFloat(ms / 1000).toFixed(2)
-  return sec
+  return (ms / 1000).toFixed(2)
 }
